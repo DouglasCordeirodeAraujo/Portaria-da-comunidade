@@ -19,6 +19,10 @@ header{
     background-color: #1b4332;
 }
 
+.title{
+  text-decoration: none;
+}
+
 h1{
     font-size: 3.0rem;
     font-weight: 600;
