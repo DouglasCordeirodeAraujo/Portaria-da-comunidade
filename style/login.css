@@ -7,8 +7,15 @@
     font-family: "Libre Baskerville", serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 body{
     background-color: #F9FAFB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -63,12 +70,11 @@ h1{
   display: block;
   padding: 12px 20px;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #1B4332;
   text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.2s, color 0.2s;
   border-bottom: 1px solid #F0F0F0;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .dropdown a:last-child {
@@ -84,6 +90,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     min-height: 80vh;
 }
 

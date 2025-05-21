@@ -7,8 +7,16 @@
     font-family: "Libre Baskerville", serif;
 }
 
-body{
+html, body {
+    height: 100%;
     background-color: #F9FAFB;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -87,6 +95,7 @@ h1{
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex-grow: 1;
 }
 
 .container-cadastro{
