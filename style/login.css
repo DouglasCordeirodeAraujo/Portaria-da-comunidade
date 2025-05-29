@@ -23,7 +23,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #1b4332;
+    background-color: #C54F2B;
 }
 
 .title{
@@ -38,7 +38,7 @@ h1{
 }
 
 .menu-button {
-  background-color: #1B4332;
+  background-color: #C54F2B;
   color: #FFFFFF;
   border: none;
   padding: 10px 20px;
@@ -49,7 +49,7 @@ h1{
 }
 
 .menu-button:hover {
-  background-color: #2D6A4F;
+  background-color: #C76547;
 }
 
 .dropdown {
@@ -71,7 +71,7 @@ h1{
   padding: 12px 20px;
   font-size: 1.2rem;
   font-weight: 500;
-  color: #1B4332;
+  color: #C54F2B;
   text-decoration: none;
   border-bottom: 1px solid #F0F0F0;
   transition: background-color 0.2s, color 0.2s;
@@ -82,8 +82,8 @@ h1{
 }
 
 .dropdown a:hover {
-  background-color: #D8F3DC;
-  color: #081C15;
+  background-color: #FAD4C0;
+  color: #9C2C0A;
 }
 
 main {
@@ -106,7 +106,7 @@ main {
 .login-container h2 {
     margin-bottom: 1.5rem;
     font-size: 2rem;
-    color: #1B4332;
+    color: #C54F2B;
     text-align: center;
 }
 
@@ -114,7 +114,7 @@ main {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: #081C15;
+    color: #C54F2B;
 }
 
 .login-container input {
@@ -127,9 +127,9 @@ main {
 }
 
 .login-container input:focus {
-    border-color: #2D6A4F;
+    border-color: #9C2C0A;
     outline: none;
-    box-shadow: 0 0 5px rgba(45, 106, 79, 0.5);
+    box-shadow: 1px 1px 2px rgba(156, 44, 10, 0.6);
 }
 
 .forgot-password {
@@ -139,7 +139,7 @@ main {
 
 .forgot-password a {
     font-size: 0.9rem;
-    color: #2D6A4F;
+    color: #9C2C0A;
     text-decoration: none;
 }
 
@@ -150,7 +150,7 @@ main {
 .login-container button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #1B4332;
+    background-color: #C54F2B;
     color: white;
     border: none;
     font-size: 1rem;
@@ -160,7 +160,7 @@ main {
 }
 
 .login-container button[type="submit"]:hover {
-    background-color: #2D6A4F;
+    background-color: #9C2C0A;
 }
 
 footer{
@@ -168,7 +168,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1B4332;
+    background-color: #C54F2B;
     width: 100%;
     padding: 1rem 2rem;
 }

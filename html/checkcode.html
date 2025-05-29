@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/checkcode.css">
     <title>Portaria da Comunidade</title>
-    <link rel="stylesheet" href="../style/forgotPassword.css">
 </head>
 <body>
     <header>
@@ -20,14 +20,15 @@
         </div>
     </header>
     <main>
-        <div class="password-Container">
-            <h2 id="form-title">Recuperar Senha</h2>
-            <p id="form-desc">Digite seu e-mail para redefinir sua senha</p>
-            <form id="formPassword" aria-labelledby="form-title" aria-describedby="form-desc">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" autocomplete="email" placeholder="Digite o e-mail cadastrado" required>
-
-                <button type="submit">Recuperar</button>
+        <div class="checkcode-container">
+            <h2>Verifique seu Código</h2>
+            <p>Digite o código que você recebeu por e-mail</p>
+            <form id="verifyForm">
+                <input type="hidden" id="email" name="email">
+                <label for="codigo">Código de Verificação</label>
+                <input type="text" id="codigo" name="codigo" autocomplete="one-time-code" required>
+                <button type="submit">Verificar</button>
+                <p id="codigoErro" style="color:red; display:none;"></p>
             </form>
         </div>
     </main>
@@ -36,6 +37,6 @@
         <p>&copy; Todos os direitos reservados</p>
     </footer>
     <script src="../js/common.js"></script>
-    <script src="../js/forgotPassword.js"></script>
+    <script src="../js/checkcode.js"></script>
 </body>
 </html>
