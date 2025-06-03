@@ -2,8 +2,8 @@ const params = new URLSearchParams(window.location.search);
 const email = params.get('email');
 
 if (!email) {
-  alert('E-mail inválido. Acesse o link enviado por e-mail.');
-  window.location.href = '/recuperarSenha.html';
+  alert('E-mail não informado. Volte e digite seu e-mail para receber o código.');
+  window.location.href = 'html/forgotPassword.html';
 } else {
   document.getElementById('email').value = email;
 }
@@ -34,7 +34,7 @@ document.getElementById('verifyForm')?.addEventListener('submit', async (e) => {
     if (data.ok) {
       sessionStorage.setItem('emailRecuperacao', email);
       sessionStorage.setItem('codigoRecuperacao', codigo);
-      window.location.href = 'redefinirSenha.html';
+      window.location.href = data.redirecionar;
     } else {
       msgErro.innerText = data.msg || 'Código inválido ou expirado';  // ★
       msgErro.style.display = 'block';                                // ★

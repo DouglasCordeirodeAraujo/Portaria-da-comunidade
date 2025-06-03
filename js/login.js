@@ -16,8 +16,8 @@ document.getElementById('formlogin')?.addEventListener('submit', async (e) => {
 
     const result = await res.json();
     if (res.ok) {
-      alert('Login feito com sucesso!');
-      // redirecionar se quiser
+      window.location.href = result.redirecionar;
+      
     } else {
       alert(result.error || 'Erro no login');
     }
